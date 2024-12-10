@@ -21,7 +21,7 @@ export let allTea = [
     name: "УЛУН",
     description:
       " Улун — это полузаваренный китайский чай. Его листья проходят частичную ферментацию.",
-    price: "1299",
+    price: "1984",
     img: "../assets/allTea/ULUN-TEA.png",
   },
   {
@@ -55,5 +55,3 @@ export function updateRedNums() {
 export function saveToLocalStorage() {
   localStorage.setItem("item", JSON.stringify(savedItems));
 }
-
-updateRedNums();
