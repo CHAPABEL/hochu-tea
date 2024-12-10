@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nostyle.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="nostyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="flex justify-around w-full p-4 border-b-4 border-b-orange-300"
+    >
+      <div class="flex items-center gap-4">
+        <img src="../assets/LOGOMAIN.svg" class="w-20" />
+        <span class="text-black text-2xl pt-4">HOCHU<br />TEA</span>
+      </div>
+
+      <div class="flex gap-14 items-center">
+        <a href="../index.html" class="text-black text-xl hover:text-gray-600"
+          >ГЛАВНАЯ</a
+        >
+        <a
+          href="poductItems.html"
+          class="text-black text-xl hover:text-gray-600"
+          >ПРОДУКЦИЯ</a
+        >
+        <a href="#" class="text-black text-xl hover:text-gray-600">О НАС</a>
+        <a href="#" class="text-black text-xl hover:text-gray-600">ДОСТАВКА</a>
+      </div>
+      <div class="w-[10%] items-center gap-2 flex pt-4">
+        <a href="shopItms.html">
+          <img src="../assets/SHOPCAT.svg" class="w-12" />
+        </a>
+        <div class="" id="redNum"></div>
+      </div>
+    </header>
+    <main class="w-[85%] mr-auto ml-auto">
+      <section class="flex mt-14 justify-between items-center">
+        <div class="flex flex-col gap-4 w-[55%]">
+          <p class="text-4xl font-semibold">HOCHU TEA</p>
+          <p class="text-3xl text-gray-500 font-thin">
+            это чайная компания, предлагающая широкий ассортимент
+            высококачественного чая со всего мира. Компания фокусируется на
+            нашем производстве и качестве. Мы стремимся доставить своим клиентам
+            незабываемые чайные впечатления.
+          </p>
+        </div>
+        <img src="../assets/aboutUsAssets/CUP.svg" class="w-[15%]" />
+      </section>
+      <section class="flex mt-12 justify-between">
+        <div class="w-[40%]">
+          <p class="text-4xl font-semibold">РЕЖИМ РАБОТЫ :</p>
+          <p class="text-3xl font-thin text-gray-500 mt-4">
+            ПН - ВС с 12:00 до 21:00<br /><br />
+            Наш чайный клуб находится в историческом центре Москвы. Приходите к
+            нам в гости, на дегустацию редких сортов с плантаций Китая. Мы будем
+            рады Вас видеть!
+          </p>
+        </div>
+        <div class="">
+          <p class="text-4xl font-semibold">КОНТАКТЫ</p>
+          <p class="text-3xl font-thin text-gray-500 mt-4">
+            +7 (999) 999 99 99
+          </p>
+          <p class="text-3xl font-thin text-gray-500 mt-4">
+            Кронштадтский б-р, 37Б, стр.3, Москва.
+          </p>
+        </div>
+      </section>
+      <div style="position: relative; overflow: hidden">
+        <iframe
+          src="https://yandex.com/map-widget/v1/?ll=37.505534%2C55.848331&mode=search&oid=1328701840&ol=biz&z=16.11"
+          class="w-[90%] h-[640px] p-24 mr-auto ml-auto"
+          frameborder="1"
+          allowfullscreen="true"
+          style="position: relative"
+        ></iframe>
+      </div>
+    </main>
+    <footer class="bg-orange-300 p-14 flex justify-between">
+      <div class="flex flex-col justify-between align-middle">
+        <a
+          href="../index.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          ГЛАВНАЯ
+        </a>
+        <a
+          href="../pages/poductItems.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          ПРОДУКЦИЯ
+        </a>
+        <a
+          href="../pages/aboutUs.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          О НАС
+        </a>
+        <a href="#" class="text-4xl font-semibold hover:text-gray-800">
+          ДОСТАВКА
+        </a>
+      </div>
+      <div class="flex flex-col gap-8">
+        <div class="">
+          <p class="text-4xl font-semibold pb-4">АДРЕС</p>
+          <p class="text-4xl font-thin">
+            Кронштадтский б-р, 37Б, стр.3, Москва.
+          </p>
+        </div>
+        <div class="">
+          <p class="text-4xl font-semibold pb-4">КОНТАКТЫ</p>
+          <p class="text-4xl font-thin">+7 (999) 999 99 99</p>
+          <p class="text-4xl font-thin">@hochu_tea</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

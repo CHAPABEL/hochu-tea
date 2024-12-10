@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nostyle.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="flex justify-around w-full p-4 border-b-4 border-b-orange-300"
+    >
+      <div class="flex items-center gap-4">
+        <img src="../assets/LOGOMAIN.svg" class="w-20" />
+        <span class="text-black text-2xl pt-4">HOCHU<br />TEA</span>
+      </div>
+
+      <div class="flex gap-14 items-center">
+        <a href="../index.html" class="text-black text-xl hover:text-gray-600"
+          >ГЛАВНАЯ</a
+        >
+        <a href="#" class="text-black text-xl hover:text-gray-600">ПРОДУКЦИЯ</a>
+        <a
+          href="../pages/aboutUs.html"
+          class="text-black text-xl hover:text-gray-600"
+          >О НАС</a
+        >
+        <a href="#" class="text-black text-xl hover:text-gray-600">ДОСТАВКА</a>
+      </div>
+      <div class="w-[10%] items-center gap-2 flex pt-4">
+        <a href="shopItms.html">
+          <img src="../assets/SHOPCAT.svg" class="w-12" />
+        </a>
+        <div class="" id="redNum"></div>
+      </div>
+    </header>
+    <main class="w-[95%] flex ml-auto mr-auto">
+      <section
+        class="border-r-orange-300 flex flex-col gap-4 border-r-4 w-[19%] pt-4 border-t-orange-300 h-screen"
+      >
+        <span class="text-2xl font-semibold border-b-orange-300 border-b-4"
+          >ЧАЙ</span
+        >
+
+        <a href="#" class="text-2xl font-thin hover:text-gray-500"
+          >АСОРТИМЕНТ</a
+        >
+      </section>
+      <section class="m-12 w-full">
+        <span class="text-2xl font-semibold border-b-gray-800 border-b-4"
+          >КОЛЛЕКЦИИ</span
+        >
+
+        <section class="grid grid-cols-3 gap-[2%] mt-8" id="itmListCol">
+          <!-- <div
+            class="flex flex-col border-4 w-[350px] p-5 border-gray-300 rounded-xl shrink-0 items-center gap-4"
+          >
+            <img src="../assets/TEA1.png" class="" />
+            <p class="text-4xl border-b-4 border-b-gray-300" id="nameItm">
+              НОВОГОДНИЙ
+            </p>
+
+            <p
+              class="text-sm text-center text-black bg-gradient-to-b from-gray-400 to-danger bg-clip-text text-transparent transition delay-[25ms] duration-300 ease-in-out hover:text-black hover:scale-110"
+              id="discItm"
+            >Имбирное Рождество – самый классический, самый рождественский чай из всей коллекции.</p>
+            <span class="text-4xl font-thin text-gray-600" id="priceItm"
+              >4000 РУБ</span
+            >
+            <button
+              class="text-2xl bg-orange-300 rounded-[50px] pl-12 pr-12 transition delay-[25ms] duration-300 ease-in-out hover:scale-110"
+              id="addBtn"
+            >
+              КУПИТЬ
+            </button>
+          </div> -->
+        </section>
+      </section>
+    </main>
+    <footer class="bg-orange-300 p-14 flex justify-between">
+      <div class="flex flex-col justify-between align-middle">
+        <a
+          href="../index.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          ГЛАВНАЯ
+        </a>
+        <a
+          href="../pages/poductItems.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          ПРОДУКЦИЯ
+        </a>
+        <a
+          href="../pages/aboutUs.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          О НАС
+        </a>
+        <a href="#" class="text-4xl font-semibold hover:text-gray-800">
+          ДОСТАВКА
+        </a>
+      </div>
+      <div class="flex flex-col gap-8">
+        <div class="">
+          <p class="text-4xl font-semibold pb-4">АДРЕС</p>
+          <p class="text-4xl font-thin">
+            Кронштадтский б-р, 37Б, стр.3, Москва.
+          </p>
+        </div>
+        <div class="">
+          <p class="text-4xl font-semibold pb-4">КОНТАКТЫ</p>
+          <p class="text-4xl font-thin">+7 (999) 999 99 99</p>
+          <p class="text-4xl font-thin">@hochu_tea</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../scripts/script.js"></script>
+    <script type="module" src="../scripts/tovar.js"></script>
+  </body>
+</html>

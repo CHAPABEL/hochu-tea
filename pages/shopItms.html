@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="nostyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="flex justify-around w-full p-4 border-b-4 border-b-orange-300"
+    >
+      <div class="flex items-center gap-4">
+        <img src="../assets/LOGOMAIN.svg" class="w-20" />
+        <span class="text-black text-2xl pt-4">HOCHU<br />TEA</span>
+      </div>
+
+      <div class="flex gap-14 items-center">
+        <a href="../index.html" class="text-black text-xl hover:text-gray-600"
+          >ГЛАВНАЯ</a
+        >
+        <a
+          href="poductItems.html"
+          class="text-black text-xl hover:text-gray-600"
+          >ПРОДУКЦИЯ</a
+        >
+        <a href="aboutUs.html" class="text-black text-xl hover:text-gray-600"
+          >О НАС</a
+        >
+        <a href="#" class="text-black text-xl hover:text-gray-600">ДОСТАВКА</a>
+      </div>
+      <div class="w-[10%] items-center gap-2 flex pt-4">
+        <a href="shopItms.html">
+          <img src="../assets/SHOPCAT.svg" class="w-12" />
+        </a>
+        <div class="" id="redNum"></div>
+      </div>
+    </header>
+    <main class="">
+      <section
+        class="flex h-screen mt-4 flex-col snap-y overflow-y-auto snap-mandatory gap-4"
+        id="shopItems"
+      >
+        <!-- <div
+          class="flex justify-between p-8 w-[95%] ml-auto mr-auto border-4 rounded-[55px] border-orange-300"
+        >
+          <div class="flex gap-8">
+            <img src="../assets/black-tea.png" class="w-[25%]" />
+            <div class="flex flex-col gap-4">
+              <span class="text-4xl">НОВОГОДНИЙ</span>
+              <span
+                class="text-xl text-gray-500 bg-gradient-to-b transition delay-[25ms] duration-300 ease-in-out active:scale-110"
+                >Имбирное Рождество – самый классический,<br />
+                самый рождественский чай из всей коллекции.
+              </span>
+            </div>
+          </div>
+          <div class="flex g items-center">
+            <span class="w-[270px] font-thin text-gray-600 text-6xl"
+              >4000 РУБ</span
+            >
+            <div class="flex items-center p-4 gap-4">
+              <span class="font-thin text-6xl">1</span>
+              <div class="flex m-4 flex-col">
+                <button
+                  class="text-4xl pb-2 transition delay-[25ms] duration-300 ease-in-out hover:scale-110 hover:drop-shadow-2xl"
+                >
+                  +
+                </button>
+                <div class="border-orange-300 border-2 rounded-2xl"></div>
+                <button
+                  class="text-4xl transition delay-[25ms] duration-300 ease-in-out hover:scale-110 hover:drop-shadow-2xl"
+                >
+                  -
+                </button>
+              </div>
+              <a href="#">
+                <button
+                  class="items-center border-orange-300 pl-6 pr-6 border-4 rounded-xl transition delay-[25ms] duration-300 ease-in-out hover:scale-110 hover:drop-shadow-2xl text-4xl"
+                >
+                  КУПИТЬ
+                </button></a
+              >
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <div
+        class="fixed inset-0 bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-500 p"
+        id="popupbBg"
+      >
+        <form
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 bg-white w-[400px] p-6 transition-transform duration-500"
+          id="popup"
+        >
+          <p class="absolute top-2.5 right-2.5 cursor-pointer" id="closePopup">
+            X
+          </p>
+          <label class="flex flex-col-reverse mb-6">
+            <input
+              type="text"
+              name="name"
+              class="h-11 text-lg border-0 border-b border-gray-300 focus:border-orange-300 focus:outline-none"
+            />
+            <div
+              class="text-sm uppercase font-medium text-gray-400 mb-1 transition-colors focus-within:text-orange-300"
+            >
+              Ваше имя
+            </div>
+          </label>
+          <label class="flex flex-col-reverse mb-6">
+            <input
+              type="tel"
+              name="tel"
+              class="h-11 text-lg border-0 border-b border-gray-300 focus:border-orange-300 focus:outline-none"
+            />
+            <div
+              class="text-sm uppercase font-medium text-gray-400 mb-1 transition-colors focus-within:text-orange-300"
+            >
+              Ваш телефон
+            </div>
+          </label>
+          <label class="flex flex-col-reverse mb-6">
+            <textarea
+              name="message"
+              class="resize-none w-full h-[150px] text-lg border-0 border-b border-gray-300 focus:text-orange-300 focus:outline-none pt-1"
+            ></textarea>
+            <div
+              class="text-sm uppercase font-medium text-gray-400 mb-1 transition-colors focus-within:text-orange-300"
+            >
+              Комментарии к заказу
+            </div>
+          </label>
+          <button
+            type="submit"
+            class="w-full h-11 flex items-center justify-center rounded-3xl text-black text-lg border-2 border-orange-300 bg-orange-300 cursor-pointer uppercase transition-all duration-500 hover:scale-105"
+          >
+            Отправить
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="bg-orange-300 p-14 flex justify-between">
+      <div class="flex flex-col justify-between align-middle">
+        <a
+          href="../index.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          ГЛАВНАЯ
+        </a>
+        <a
+          href="../pages/poductItems.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          ПРОДУКЦИЯ
+        </a>
+        <a
+          href="../pages/aboutUs.html"
+          class="text-4xl font-semibold hover:text-gray-800"
+        >
+          О НАС
+        </a>
+        <a href="#" class="text-4xl font-semibold hover:text-gray-800">
+          ДОСТАВКА
+        </a>
+      </div>
+      <div class="flex flex-col gap-8">
+        <div class="">
+          <p class="text-4xl font-semibold pb-4">АДРЕС</p>
+          <p class="text-4xl font-thin">
+            Кронштадтский б-р, 37Б, стр.3, Москва.
+          </p>
+        </div>
+        <div class="">
+          <p class="text-4xl font-semibold pb-4">КОНТАКТЫ</p>
+          <p class="text-4xl font-thin">+7 (999) 999 99 99</p>
+          <p class="text-4xl font-thin">@hochu_tea</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../scripts/script.js"></script>
+    <script type="module" src="../scripts/shop.js"></script>
+  </body>
+</html>
